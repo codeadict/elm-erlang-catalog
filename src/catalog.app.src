@@ -1,0 +1,22 @@
+{application, catalog,
+ [{description, "Simple Products API built with Erlang and ELM on the Frontend."},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {mod, { catalog, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    lager,
+    jsx,
+    cowboy,
+    trails,
+    cowboy_swagger
+   ]},
+  {env,[]},
+  {modules, []},
+  {start_phases, [{start_trails_http, []}]},
+  {build_tools,["rebar3"]},
+  {maintainers, ["Dairon Medina <me@dairon.org>"]},
+  {licenses, ["Apache 2"]},
+  {links, ["https://github.com/codeadict/elm-erlang-catalog"]}
+ ]}.
